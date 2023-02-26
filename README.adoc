@@ -45,7 +45,7 @@ Format all of your code with https://github.com/weavejester/cljfmt[cljfmt].
 
 === `scripts/outdated`
 
-Find and update any dependencies listed in `deps.edn` with https://github.com/liquidz/antq[antq].
+Find and update dependencies with https://github.com/liquidz/antq[antq].
 
 [source,bash]
 ----
