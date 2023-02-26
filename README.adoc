@@ -47,6 +47,15 @@ Format all of your code with https://github.com/weavejester/cljfmt[cljfmt].
 
 Find and update any dependencies listed in `deps.edn` with https://github.com/liquidz/antq[antq].
 
+[source,bash]
+----
+# Check for updates
+./scripts/outdated
+
+# Actually perform updates
+./scripts/outdated --upgrade
+----
+
 == Unlicenced
 
 Find the full http://unlicense.org/[unlicense] in the `UNLICENSE` file, but here's a snippet.
