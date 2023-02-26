@@ -1,4 +1,4 @@
-(ns clojure-giants-shoulders.repl
+(ns giants-shoulders.repl
   (:require [nrepl.server :as nrepl]
             [cider.nrepl :as cider]
             [malli.core :as m]
