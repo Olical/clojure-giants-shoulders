@@ -27,7 +27,7 @@
   "Start a development REPL, intended to be invoked from ./scripts/repl"
   [{:keys [portal]}]
   (log/info "Starting malli dev instrumentation")
-  (malli-dev/start! {:report (malli-pretty/reporter)})
+  (malli-dev/start! {:report (malli-pretty/thrower)})
 
   (log/info "Starting mount system")
   (mount/start)
