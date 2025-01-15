@@ -1,0 +1,17 @@
+[tools]
+java = "temurin-21.0.5+11"
+
+[tasks."docker:build"]
+run = "docker build -t clojure-giants-shoulders:dev ."
+
+[tasks.format]
+run = "clojure -M:format"
+
+[tasks.test]
+run = "clojure -M:test"
+
+[tasks.antq]
+run = "clojure -M:antq"
+
+[tasks.repl]
+run = "clojure -X:test:repl giants-shoulders.repl/start!"
