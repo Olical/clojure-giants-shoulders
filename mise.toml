@@ -12,6 +12,7 @@ run = "clojure -M:format"
 run = "clojure -M:test"
 
 [tasks.antq]
+raw = true
 run = "clojure -M:antq"
 
 [tasks.repl]
