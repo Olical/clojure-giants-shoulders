@@ -9,7 +9,7 @@ run = "docker build -t clojure-giants-shoulders:dev ."
 run = "clojure -M:format"
 
 [tasks.test]
-run = "clojure -M:test"
+run = "clojure -M:test:repl"
 
 [tasks.antq]
 raw = true
