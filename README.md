@@ -1,14 +1,22 @@
 # [Clojure](https://clojure.org/) Giant's Shoulders
 
-This repo is a bundle of tools and scripts I tend to reach for every time I start a new Clojure project. I hope you find it useful as a starting point for your projects too! Please feel free to delete any parts you don’t need or want, it’s just a suggestion and a place to begin.
+A starting point for all of my Clojure projects, I hope you will find it useful too. Comes with a fully featured nREPL server, tests, formatter, [debugger](https://github.com/flow-storm/flow-storm-debugger) and [data navigator](https://github.com/djblue/portal).
 
-I want to get you into a REPL as quickly as possible so you can start solving problems without worrying about the colour of the bike shed.
+Requires [mise](https://mise.jdx.dev/) to start various tasks which will also handle the Java and Clojure CLI versions for you automatically. Trust me, you'll love it once you try it.
 
 You can use any [nREPL](https://nrepl.org/nrepl/index.html) based Clojure editor plugins to talk to the REPL but I of course recommend my own, [Conjure](https://github.com/Olical/conjure), if you’re not sure where to start. If you’re really new to Clojure and don’t fancy diving into [Neovim](https://neovim.io/) then I’d probably recommend [Calva](https://calva.io/).
 
-Fork, copy, clone, borrow, read or browse. Do whatever you want with this repository and use it how you see fit.
+Fork, copy, clone, borrow, read or browse. Do whatever you want with this repository and use it how you see fit. I like to do the following when starting a new project.
 
-Good luck, have fun!
+```bash
+# Notice the `/.` in order to copy the entire directory and it's hidden directories.
+cp -r clojure-giants-shoulders/. my-project
+cd my-project
+rm -rf .git
+git init
+```
+
+Let's stop talking about bike sheds and go paint some instead. Good luck, have fun!
 
 ## LSP
 
