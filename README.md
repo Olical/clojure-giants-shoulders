@@ -1,6 +1,6 @@
 # [Clojure](https://clojure.org/) Giant's Shoulders
 
-A starting point for all of my Clojure projects, I hope you will find it useful too. Comes with a fully featured nREPL server, tests, formatter, [debugger](https://github.com/flow-storm/flow-storm-debugger) and [data navigator](https://github.com/djblue/portal).
+A starting point for all of my Clojure projects, I hope you will find it useful too. Comes with a fully featured nREPL server, tests, formatter, CI, [debugger](https://github.com/flow-storm/flow-storm-debugger) and [data navigator](https://github.com/djblue/portal).
 
 Requires [mise](https://mise.jdx.dev/) to start various tasks which will also handle the Java and Clojure CLI versions for you automatically. Trust me, you'll love it once you try it.
 
