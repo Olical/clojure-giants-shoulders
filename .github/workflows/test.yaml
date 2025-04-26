@@ -15,17 +15,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Prepare Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: "temurin"
-          java-version: "21"
-
-      - name: Install Clojure tools
-        uses: DeLaGuardo/setup-clojure@13.2
-        with:
-          cli: 1.12.0.1530
-
       - name: Install Mise
         uses: jdx/mise-action@v2
 
