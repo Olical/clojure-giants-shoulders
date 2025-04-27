@@ -2,9 +2,6 @@
 clojure = "1.12.0"
 java = "temurin-21.0.6+7.0.LTS"
 
-[tasks."docker:build"]
-run = "docker build -t clojure-giants-shoulders:dev ."
-
 [tasks.format]
 run = "clojure -M:format"
 
