@@ -6,6 +6,7 @@ java = "temurin-21.0.6+7.0.LTS"
 run = "clojure -M:format"
 
 [tasks.test]
+raw = true
 run = "clojure -M:test:dev"
 
 [tasks.antq]
