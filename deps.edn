@@ -30,13 +30,14 @@
  {:test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.91.1392"}
                       nubank/matcher-combinators {:mvn/version "3.9.1"}}
          :main-opts ["-m" "kaocha.runner"]}
-  :repl {:classpath-overrides {org.clojure/clojure nil}
-         :jvm-opts ["-Dclojure.storm.instrumentEnable=true"]
-         :extra-deps {cider/cider-nrepl {:mvn/version "0.55.4"}
-                      djblue/portal {:mvn/version "0.59.0"}
-                      com.bhauman/rebel-readline {:mvn/version "0.1.5"}
-                      com.github.flow-storm/flow-storm-dbg {:mvn/version "4.4.0"}
-                      com.github.flow-storm/clojure {:mvn/version "1.12.0-9"}}}
+  :dev {:extra-paths ["dev"]
+        :classpath-overrides {org.clojure/clojure nil}
+        :jvm-opts ["-Dclojure.storm.instrumentEnable=true"]
+        :extra-deps {cider/cider-nrepl {:mvn/version "0.55.4"}
+                     djblue/portal {:mvn/version "0.59.0"}
+                     com.bhauman/rebel-readline {:mvn/version "0.1.5"}
+                     com.github.flow-storm/flow-storm-dbg {:mvn/version "4.4.0"}
+                     com.github.flow-storm/clojure {:mvn/version "1.12.0-9"}}}
   :antq {:deps {com.github.liquidz/antq {:mvn/version "2.11.1276"}}
          :main-opts ["-m" "antq.core"]}
   :format {:deps {cljfmt/cljfmt {:mvn/version "0.9.2"}}

@@ -1,7 +1,6 @@
 (ns giants-shoulders.repl
   (:require [nrepl.server :as nrepl]
             [cider.nrepl :as cider]
-            [malli.core :as m]
             [malli.dev :as malli-dev]
             [malli.dev.pretty :as malli-pretty]
             [taoensso.timbre :as log]
@@ -17,14 +16,8 @@
   :start (log/info "Mount system started")
   :stop (log/info "Mount system stopped"))
 
-(defn- add
-  "If you have LSP configured correctly you should see a type error / warning if you try to type (add :foo 10) inside this buffer."
-  [a b]
-  (+ a b))
-(m/=> add [:=> [:cat number? number?] number?])
-
 (defn start!
-  "Start a development REPL, intended to be invoked from ./scripts/repl"
+  "Start a development REPL."
   [{:keys [portal]}]
   (log/info "Starting malli dev instrumentation")
   (malli-dev/start! {:report (malli-pretty/thrower)})
