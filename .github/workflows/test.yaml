@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Mise
+      - name: Mise
         uses: jdx/mise-action@v2
 
       - name: Cache
