@@ -7,7 +7,7 @@ run = "clojure -M:format"
 
 [tasks.test]
 raw = true
-run = "clojure -M:test:dev"
+run = "clojure -M:dev:test"
 
 [tasks.antq]
 raw = true
@@ -15,4 +15,4 @@ run = "clojure -M:antq"
 
 [tasks.repl]
 raw = true
-run = "clojure -X:test:dev:flowstorm giants-shoulders.repl/start!"
+run = "clojure -M:test:dev:flowstorm"
