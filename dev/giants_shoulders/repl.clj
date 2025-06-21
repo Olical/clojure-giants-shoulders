@@ -3,8 +3,7 @@
             [cider.nrepl :as cider]
             [malli.dev :as malli-dev]
             [malli.dev.pretty :as malli-pretty]
-            [taoensso.timbre :as log]
-            [portal.api :as portal]
+            [taoensso.telemere :as te]
             [mount.core :as mount]
             [rebel-readline.core :as rr]
             [rebel-readline.clojure.line-reader :as rr-clr]
@@ -13,43 +12,37 @@
             [clojure.main :as clj-main]))
 
 (mount/defstate system-status-logger
-  :start (log/info "Mount system started")
-  :stop (log/info "Mount system stopped"))
+  :start (te/log! :info "Mount system started")
+  :stop (te/log! :info "Mount system stopped"))
 
 (defn start!
   "Start a development REPL."
-  [{:keys [portal]}]
-  (log/info "Starting malli dev instrumentation")
+  [_params]
+  (te/log! :info "Starting malli dev instrumentation")
   (malli-dev/start! {:report (malli-pretty/thrower)})
 
-  (log/info "Starting mount system")
+  (te/log! :info "Starting mount system")
   (mount/start)
 
-  (log/info "Starting nREPL server")
+  (te/log! :info "Starting nREPL server")
   (let [{:keys [port] :as _server} (nrepl/start-server :handler cider/cider-nrepl-handler)]
-    (log/info "nREPL server started on port" port)
-    (log/info "Writing port to .nrepl-port")
+    (te/log!
+     {:level :info
+      :msg "nREPL server started"
+      :data {:port port}})
+    (te/log! :info "Writing port to .nrepl-port")
     (spit ".nrepl-port" port))
 
-  (when portal
-    (log/info "Opening portal, use (tap> ...) to inspect values")
-    (portal/open)
-    (add-tap #'portal/submit))
-
-  (log/info "Starting interactive REPL")
+  (te/log! :info "Starting interactive REPL")
   (rr/with-line-reader
     (rr-clr/create (rr-csl/create))
     (clj-main/repl
      :prompt (fn [])
      :read (rr-cm/create-repl-read)))
 
-  (log/info "Shutting down")
+  (te/log! :info "Shutting down")
 
-  (when portal
-    (log/info "Closing portal")
-    (portal/close))
-
-  (log/info "Stopping mount system")
+  (te/log! :info "Stopping mount system")
   (mount/stop)
 
   (shutdown-agents)

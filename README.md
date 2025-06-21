@@ -1,6 +1,6 @@
 # [Clojure](https://clojure.org/) Giant's Shoulders
 
-A starting point for all of my Clojure projects, I hope you will find it useful too. Comes with a fully featured nREPL server, tests, formatter, CI, [debugger](https://github.com/flow-storm/flow-storm-debugger) and [data navigator](https://github.com/djblue/portal).
+A starting point for all of my Clojure projects, I hope you will find it useful too. Comes with a fully featured nREPL server, tests, formatter, CI and [debugger](https://github.com/flow-storm/flow-storm-debugger).
 
 Requires [mise](https://mise.jdx.dev/) to start various tasks which will also handle the Java and Clojure CLI versions for you automatically. Trust me, you'll love it once you try it.
 
@@ -32,15 +32,9 @@ Starts an interactive REPL with history, highlighting, completion and automatic 
 
 You can type code directly into this REPL but I’d recommend using a plugin for an editor of your choosing. It should connect to the REPL automatically when you open a Clojure file in this project thanks to the `.nrepl-port` file.
 
-You may also enable a [portal](https://github.com/djblue/portal) window like so:
-
-```bash
-mise repl :portal true
-```
-
-This will open a window alongside your REPL (or in your current browser window if you don’t have a Chrome / Chromium installed) that will allow you to visually inspect any values you wrap in `(tap> ...)`. Try it out by evaluating `(tap> (range 10))` in the REPL with the portal window open.
-
 This development REPL also enables the [mount](https://github.com/tolitius/mount) system management and [malli](https://github.com/metosin/malli) function instrumentation.
+
+Evaluate the keyword `:dbg` from the nREPL (in your editor) or CLI REPL in order to open the [flowstorm](https://github.com/flow-storm/flow-storm-debugger) debugger window. How to use flowstorm is outside the scope of this README, but it's worth learning!
 
 ### `mise test`
 
