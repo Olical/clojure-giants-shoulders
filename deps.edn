@@ -31,7 +31,8 @@
   }
 
  :aliases
- {:test {:extra-deps {lambdaisland/kaocha {:mvn/version "1.91.1392"}
+ {:test {:extra-paths ["test"]
+         :extra-deps {lambdaisland/kaocha {:mvn/version "1.91.1392"}
                       nubank/matcher-combinators {:mvn/version "3.9.1"}}
          :main-opts ["-m" "kaocha.runner"]}
   :flowstorm {:classpath-overrides {org.clojure/clojure nil}
