@@ -9,6 +9,10 @@ run = "clojure -M:format"
 raw = true
 run = "clojure -M:dev:test"
 
+[tasks.typecheck]
+raw = true
+run = "clojure -X:typedclojure-lsp typedclojure-lsp.runner/check-dirs"
+
 [tasks.antq]
 raw = true
 run = "clojure -M:antq"
