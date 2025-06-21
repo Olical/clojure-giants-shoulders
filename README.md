@@ -28,19 +28,13 @@ We use [mise](https://mise.jdx.dev/) to manage the JVM dependency and tasks we c
 
 ### `mise repl`
 
-Starts an interactive REPL with history, highlighting, completion and automatic documentation lookup as you type. Before you start working with the project you should run this in a terminal that you can keep safe in the background somewhere.
+Starts an nREPL server. Before you start working with the project you should run this in a terminal that you can keep safe in the background somewhere.
 
-You can type code directly into this REPL but I’d recommend using a plugin for an editor of your choosing. It should connect to the REPL automatically when you open a Clojure file in this project thanks to the `.nrepl-port` file.
-
-This development REPL also enables the [mount](https://github.com/tolitius/mount) system management and [malli](https://github.com/metosin/malli) function instrumentation.
-
-Evaluate the keyword `:dbg` from the nREPL (in your editor) or CLI REPL in order to open the [flowstorm](https://github.com/flow-storm/flow-storm-debugger) debugger window. How to use flowstorm is outside the scope of this README, but it's worth learning!
+Evaluate the keyword `:dbg` in order to open the [flowstorm](https://github.com/flow-storm/flow-storm-debugger) debugger window. How to use flowstorm is outside the scope of this README, but it's worth learning!
 
 ### `mise test`
 
 Run the test suite with [kaocha](https://github.com/lambdaisland/kaocha). Append `--watch` to execute your tests as you change files.
-
-I highly recommend keeping a `./scripts/kaocha --watch` window open beside your `scripts/repl` window while you work.
 
 ### `mise format`
 

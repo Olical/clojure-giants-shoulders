@@ -5,11 +5,11 @@
   com.taoensso/telemere {:mvn/version "1.0.1"}
 
   ;; Schemas and type checking
-  metosin/malli {:mvn/version "0.19.1"}
-  org.typedclojure/typed.clj.runtime {:mvn/version "1.3.0"}
+  ; metosin/malli {:mvn/version "0.19.1"}
+  ; org.typedclojure/typed.clj.runtime {:mvn/version "1.3.0"}
 
   ;; System and state management
-  mount/mount {:mvn/version "0.1.23"}
+  ; mount/mount {:mvn/version "0.1.23"}
 
   ;; Error handling
   ; fmnoise/flow {:mvn/version "4.3.0"}

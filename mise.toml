@@ -1,5 +1,5 @@
 [tools]
-clojure = "1.12.0"
+clojure = "1.12.1"
 java = "temurin-21.0.6+7.0.LTS"
 
 [tasks.format]
@@ -15,4 +15,4 @@ run = "clojure -M:antq"
 
 [tasks.repl]
 raw = true
-run = "clojure -X:test:dev:flowstorm giants-shoulders.repl/start!"
+run = "clojure -X:test:dev giants-shoulders.repl/start!"
