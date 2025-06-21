@@ -16,3 +16,12 @@ run = "clojure -M:antq"
 [tasks.repl]
 raw = true
 run = "clojure -M:test:dev:flowstorm"
+
+[tasks.build]
+run = "clojure -T:build jar"
+
+[tasks.clean]
+run = "clojure -T:build clean"
+
+[tasks.deploy]
+run = "clojure -T:build deploy"
