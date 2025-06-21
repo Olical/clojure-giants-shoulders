@@ -15,4 +15,4 @@ run = "clojure -M:antq"
 
 [tasks.repl]
 raw = true
-run = "clojure -X:test:dev giants-shoulders.repl/start!"
+run = "clojure -X:test:dev:flowstorm giants-shoulders.repl/start!"
