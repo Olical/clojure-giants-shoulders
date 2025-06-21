@@ -35,8 +35,8 @@
                       nubank/matcher-combinators {:mvn/version "3.9.1"}}
          :main-opts ["-m" "kaocha.runner"]}
   :flowstorm {:classpath-overrides {org.clojure/clojure nil}
-              com.github.flow-storm/clojure {:mvn/version "1.12.1"}
-              com.github.flow-storm/flow-storm-dbg {:mvn/version "4.4.6"}}
+              :extra-deps {com.github.flow-storm/clojure {:mvn/version "1.12.1"}
+                           com.github.flow-storm/flow-storm-dbg {:mvn/version "4.4.6"}}}
   :dev {:extra-paths ["dev"]
         :extra-deps {cider/cider-nrepl {:mvn/version "0.56.0"}
                      com.bhauman/rebel-readline {:mvn/version "0.1.5"}}}
