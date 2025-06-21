@@ -11,6 +11,9 @@
   ;; System and state management
   mount/mount {:mvn/version "0.1.21"}
 
+  ;; Error handling
+  ; fmnoise/flow {:mvn/version "4.3.0"}
+
   ;; AWS
   ; com.cognitect.aws/api {:mvn/version "0.8.641"}
   ; com.cognitect.aws/endpoints {:mvn/version "1.1.12.398"}
