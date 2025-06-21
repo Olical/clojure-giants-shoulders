@@ -52,6 +52,10 @@ mise antq
 mise antq --upgrade
 ```
 
+### `mise clean / build / publish`
+
+Handles building and publishing JARs to Clojars.
+
 ## Unlicenced
 
 Find the full [unlicense](http://unlicense.org/) in the `UNLICENSE` file, but here’s a snippet.
