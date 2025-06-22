@@ -58,6 +58,15 @@ mise antq --upgrade
 
 Handles building and publishing JARs to Clojars.
 
+### `mise typecheck`
+
+Type checking is provided by [Typed Clojure](https://github.com/typedclojure/typedclojure), my own [typedclojure-lsp](https://github.com/Olical/typedclojure-lsp) is pre-configured in this repository (see `.typedclojure-lsp/start`), you just need to add the LSP server configuration to your text editor.
+
+## GitHub actions
+
+- Test: Runs the test suite through Kaocha.
+- Typecheck: Checks any marked namespaces with Typed Clojure.
+
 ## Unlicenced
 
 Find the full [unlicense](http://unlicense.org/) in the `UNLICENSE` file, but here’s a snippet.
