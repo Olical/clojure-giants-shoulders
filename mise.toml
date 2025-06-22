@@ -11,8 +11,7 @@ run = "clojure -M:dev:test"
 
 [tasks.typecheck]
 raw = true
-run = "echo todo"
-# run = "clojure -X:typedclojure-lsp typedclojure-lsp.runner/check-dirs"
+run = "clojure -M:typedclojure -e \"(require 'typed.clojure) (typed.clojure/check-dir-clj [\\\"src\\\"])\""
 
 [tasks.antq]
 raw = true

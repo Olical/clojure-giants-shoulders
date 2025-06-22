@@ -7,4 +7,5 @@
   [a b]
   (+ a b))
 
-; (add 10 :foo)
+#_(defn does-not-typecheck []
+    (add 10 :foo))
