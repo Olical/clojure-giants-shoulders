@@ -1,4 +1,4 @@
-(ns ^:typed.clojure example.core-test
+(ns example.core-test
   (:require [clojure.test :as t]
             [example.core :as ex]))
 

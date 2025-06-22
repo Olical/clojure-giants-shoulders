@@ -7,5 +7,4 @@
   [a b]
   (+ a b))
 
-(comment
-  (add 10 :bar))
+; (add 10 :foo)

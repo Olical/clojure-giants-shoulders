@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-clojure -M:test:typedclojure-lsp
+clojure -M:typedclojure-lsp
