@@ -1,4 +1,4 @@
-# [Clojure](https://clojure.org/) Giant's Shoulders
+# [Clojure](https://clojure.org/) template
 
 A starting point for all of my Clojure projects, I hope you will find it useful too. Comes with a fully featured nREPL server, tests, formatter, CI and [debugger](https://github.com/flow-storm/flow-storm-debugger).
 
@@ -8,9 +8,11 @@ You can use any [nREPL](https://nrepl.org/nrepl/index.html) based Clojure editor
 
 Fork, copy, clone, borrow, read or browse. Do whatever you want with this repository and use it how you see fit. I like to do the following when starting a new project.
 
+> This repository is a GitHub template, so you can create a new repository based on it if you'd like! Or copy the files as shown below.
+
 ```bash
 # Notice the `/.` in order to copy the entire directory and it's hidden directories.
-cp -r clojure-giants-shoulders/. my-project
+cp -r clojure-template/. my-project
 cd my-project
 rm -rf .git
 git init

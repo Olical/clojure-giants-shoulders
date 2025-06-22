@@ -2,7 +2,7 @@
   (:require [clojure.tools.build.api :as b]
             [deps-deploy.deps-deploy :as dd]))
 
-(def lib 'uk.me.oli/clojure-giants-shoulders)
+(def lib 'uk.me.oli/clojure-template)
 
 ;; TODO Use the GitHub rev / tag
 ;; https://github.com/jlesquembre/clojars-publish-action/blob/89a4eb7bdbe1270621e6643250afce152701699e/src/entrypoint.clj#L41-L47
@@ -13,7 +13,7 @@
 
 (def pom-template
   [[:description "Your description"]
-   [:url "https://github.com/Olical/clojure-giants-shoulders"]
+   [:url "https://github.com/Olical/clojure-template"]
    [:licenses
     [:license
      [:name "Unlicense"]
@@ -22,9 +22,9 @@
     [:developer
      [:name "Oliver Caldwell"]]]
    [:scm
-    [:url "https://github.com/Olical/clojure-giants-shoulders"]
-    [:connection "scm:git:https://github.com/Olical/clojure-giants-shoulders.git"]
-    [:developerConnection "scm:git:ssh://git@github.com:Olical/clojure-giants-shoulders.git"]
+    [:url "https://github.com/Olical/clojure-template"]
+    [:connection "scm:git:https://github.com/Olical/clojure-template.git"]
+    [:developerConnection "scm:git:ssh://git@github.com:Olical/clojure-template.git"]
     [:tag (str "v" version)]]])
 
 (def basis (delay (b/create-basis {:project "deps.edn"})))
