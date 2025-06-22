@@ -47,7 +47,7 @@
         :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
   :antq {:deps {com.github.liquidz/antq {:mvn/version "2.11.1276"}}
          :main-opts ["-m" "antq.core"]}
-  :typedclojure-lsp {:extra-deps {uk.me.oli/typedclojure-lsp {:mvn/version "0.0.4"}}
+  :typedclojure-lsp {:extra-deps {uk.me.oli/typedclojure-lsp {:mvn/version "0.0.5"}}
                      :main-opts ["-m" "typedclojure-lsp.main"]}
   :format {:deps {cljfmt/cljfmt {:mvn/version "0.9.2"}}
            :main-opts ["-m" "cljfmt.main" "fix"]}
